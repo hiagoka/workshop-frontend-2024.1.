@@ -1,0 +1,43 @@
+
+.container{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);      
+}
+
+.populares{
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid #E50914 ;
+}
+
+.card_filme{
+    text-align: center;
+    padding: 2rem;
+}
+
+.card_filme img{
+    width: 55%;
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+.rating{
+    padding: 0.5rem 0;
+}
+
+.sinopse{
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.1rem solid #E50914;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-family: "Oswald";
+}
+
+

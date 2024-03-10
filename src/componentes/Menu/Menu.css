@@ -1,0 +1,42 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #706f6b 0.1rem;
+    padding-right: 3rem ;
+}
+
+.imagem {
+    width: 10rem;
+
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+}
+
+input{
+    padding: 0.5rem 0.5rem;
+    border: solid #706f6b 0.1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: white;
+    
+}
+
+button{
+    background-color: #706f6b;
+    border: 0.1rem solid #706f6b;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu form button:hover{
+    background-color: transparent;
+    color: #E50914;
+}
