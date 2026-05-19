@@ -1,0 +1,63 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: var(--lime);
+    text-decoration: none;
+}
+
+.menu form {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+    transition: border-color 0.2s;
+}
+
+.menu form:focus-within {
+    border-color: var(--lime);
+}
+
+.menu input {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-family: "Oswald", sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    padding: 0.3rem 0;
+    width: 160px;
+    outline: none;
+    transition: width 0.3s;
+}
+
+.menu input:focus { width: 220px; }
+
+.menu input::placeholder { color: var(--muted); }
+
+.menu form button {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    font-size: 1rem;
+    padding: 0.3rem 0 0.3rem 0.55rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.18s;
+}
+
+.menu form button:hover { color: var(--lime); }

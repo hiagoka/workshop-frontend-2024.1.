@@ -1,0 +1,146 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    min-height: 80vh;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.hero_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 3rem 4rem 2.5rem;
+    animation: fadein 0.5s ease;
+}
+
+.hero_label {
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+}
+
+.hero_titulo {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.hero_meta {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-weight: 300;
+}
+
+.hero_meta span + span::before {
+    content: '/';
+    margin-right: 0.35rem;
+    color: var(--line);
+}
+
+.hero_rating {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    color: var(--lime) !important;
+}
+
+.hero_sinopse {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 420px;
+    margin-bottom: 2rem;
+}
+
+.hero_acoes {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero_btn {
+    display: inline-block;
+    background: var(--lime);
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.7rem 1.75rem;
+    border-radius: 1px;
+    transition: opacity 0.18s;
+}
+
+.hero_btn:hover { opacity: 0.85; }
+
+.hero_dots {
+    display: flex;
+    gap: 0.35rem;
+}
+
+.hero_dot {
+    height: 1px;
+    width: 18px;
+    border: none;
+    background: var(--muted);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.25s, width 0.25s;
+}
+
+.hero_dot.ativo {
+    background: var(--lime);
+    width: 32px;
+}
+
+.hero_poster_wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    border-left: 1px solid var(--line);
+    overflow: hidden;
+    animation: fadein 0.6s ease;
+}
+
+.hero_num {
+    position: absolute;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    color: var(--lime);
+    opacity: 0.05;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hero_poster {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

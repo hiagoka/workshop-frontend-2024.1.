@@ -1,0 +1,37 @@
+.section {
+    padding: 2.5rem 2.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.section_title {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px !important;
+    height: 48px !important;
+    background: var(--bg) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 2px;
+    color: var(--muted) !important;
+    top: 36% !important;
+    transition: color 0.18s, border-color 0.18s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--lime) !important;
+    border-color: var(--lime) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 0.75rem !important;
+    font-weight: 900;
+}
